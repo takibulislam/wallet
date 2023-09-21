@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="bg-stone-300 pt-5">
+        <section class="w-9/12 bg-white	 mx-auto mt-3">
+            <!-- Title gose here -->
+            <h1 class="font-bold text-3xl text-center py-4">Money Master</h1>
+
+            <!-- Content Section  -->
+                <div class="content w-9/12 mx-auto bg-stone-200 p-2">
+
+                    <!-- Income Section  -->
+                    <div id="income" class="income text-center my-2">
+                        <h4 class="">Income</h4>
+                        <input id="income-field" value="2000" class="border-0" type="text" name="" id="" placeholder="Please enter your income amount">
+                    </div>
+
+                    <!-- Expense Section  -->
+                    <div id="expense" class="expense my-2 flex flex-col items-center text-center">
+                        <h4 class="">Expense</h4>
+
+                        <!-- Expennse Type  -->
+                        <div  class="food">
+                            <p>Food</p>
+                            <input id="food"  value="48" class="border-0 text-center" type="text" name="" placeholder="Please enter your input">
+                        </div>
+
+                        <div class="rent">
+                            <p >Rent</p>
+                            <input id="rent" value="40" class="border-0 text-center" type="text" name="" placeholder="Please enter your input">
+                        </div>
+                        
+                        <div class="clothe">
+                            <p>Clothes</p>
+                            <input id="clothes" value="67" class="border-0 text-center" type="text" name=""  placeholder="Please enter your input">
+                        </div>
+                        <button id="btn-expences" class="calculate bg-stone-600 mt-4 px-5 py-3 text-white font-medium rounded">Calculate</button>
+                    </div>
+
+                    <!-- //Expense and Balance -->
+                    <div class="Account-update text-center">
+                        <div id="total-expense">
+                            <h4>Total Expense : <span id="total-expense-amount"></span></h4>
+                        </div>
+                        <div id="total-balance">
+                            <h4>Total Balnace : <span id="total-balance-amount"></span></h4>
+                        </div>
+                    </div>
+                    <!-- Savings -->
+                    <div id="Savings" class="items-center text-center">
+                        <input id="savings"type="text" name="" value="30"  placeholder="enter your percent">  %
+                        <button id="btn-savings" class="calculate bg-stone-600 mt-4 px-5 py-2 text-white font-medium rounded">Savings</button>                    
+                    </div>
+                    <div id="remaining" class="">
+                        <h4>Saving Amount : <span id="total-saving-amount"></span></h4>
+                        <h4>Remaining Balance : <span id="total-remaining-amount"></span></h4>
+
+                    </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="JS/money-optimized.js"></script>
+</body>
+</html>
